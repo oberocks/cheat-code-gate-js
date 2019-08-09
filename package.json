@@ -1,7 +1,7 @@
 {
   "name": "cheat-code-gate.js",
-  "version": "1.1.0",
-  "description": "A JavaScript plugin that automatically gates page content which can only be unlocked by using the Konami cheat code.",
+  "version": "1.1.1",
+  "description": "A tiny and super easy JavaScript component plugin that automatically gates page content in a way that can only be unlocked by entering the Konami cheat code.",
   "main": "cheat-code-gate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
