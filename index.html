@@ -42,16 +42,11 @@
 
         <script type="text/javascript">
 
-            let options = {
-                gateBackground: '#cccccc'
-            };
-            
             // on document ready
             if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
-                //cheatCodeGate();
-                cheatCodeGate(options);
+                cheatCodeGate();
             } else {
-                document.addEventListener("DOMContentLoaded", cheatCodeGate(options));
+                document.addEventListener("DOMContentLoaded", cheatCodeGate);
             }
 
         </script>
