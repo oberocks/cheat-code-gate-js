@@ -21,12 +21,14 @@ Installing `cheat-code-gate.js` is easy. Simply download the .zip from GitHub (o
 Next, you'll want to set up the code to call the `cheat-code-gate.js` function (`cheatCodeGate`) upon a page load like this:
 
 ```javascript
-// on document ready
-if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
-    cheatCodeGate();
-} else {
-    document.addEventListener("DOMContentLoaded", cheatCodeGate);
-}
+<script type="text/javascript">
+    // on document ready
+    if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
+        cheatCodeGate();
+    } else {
+        document.addEventListener("DOMContentLoaded", cheatCodeGate);
+    }
+</script>
 ```
 
 ## Customized Installation
@@ -40,16 +42,18 @@ You can alternatevly customize the colors of the dynamically created elements to
 Next, you'll want to set up the code to call the `cheat-code-gate.js` script with your custom colors JavaScript object. The following example uses a different background color for the gate element:
 
 ```javascript
-let options = {
-    gateBackground: '#cccccc'
-};
+<script type="text/javascript">
+    let options = {
+        gateBackground: '#cccccc'
+    };
 
-// on document ready
-if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
-    cheatCodeGate(options);
-} else {
-    document.addEventListener("DOMContentLoaded", cheatCodeGate(options));
-}
+    // on document ready
+    if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
+        cheatCodeGate(options);
+    } else {
+        document.addEventListener("DOMContentLoaded", cheatCodeGate(options));
+    }
+</script>
 ```
 
 ## Customization Options
