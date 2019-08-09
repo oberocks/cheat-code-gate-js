@@ -1,6 +1,6 @@
 {
   "name": "cheat-code-gate.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A tiny and super easy JavaScript component plugin that automatically gates page content in a way that can only be unlocked by entering the Konami cheat code using the dynamically created UI buttons that take over the screen.",
   "main": "cheat-code-gate.js",
   "scripts": {
