@@ -1,5 +1,19 @@
-const cheatCodeGate = function() {
+const cheatCodeGate = function(obj) {
                 
+    /* {
+        gateBackground: '#1c1c1c',
+        dPadBackground: '#242424',
+        dPadText: '#999999',
+        btnBackground: 'red',
+        btnText: 'white'
+    } */
+    // set options
+    const gateBackground = obj.gateBackground ? obj.gateBackground : '#1c1c1c';
+    const dPadBackground = obj.dPadBackground ? obj.dPadBackground : '#242424';
+    const dPadText = obj.dPadText ? obj.dPadText : '#999999';
+    const btnBackground = obj.btnBackground ? obj.btnBackground : 'red';
+    const btnText = obj.btnText ? obj.btnText : 'white';
+    
     // init the array to keep track of clicked buttons
     const btnSequence = [];
 
@@ -24,8 +38,8 @@ const cheatCodeGate = function() {
         el.style.width = '40px';
         el.style.verticalAlign = 'middle';
         el.style.fontWeight = 'bold';
-        el.style.backgroundColor = '#242424';
-        el.style.color = '#999999';
+        el.style.backgroundColor = dPadBackground;
+        el.style.color = dPadText;
         el.style.borderRadius = '10%';
         el.id = id;
         el.onclick = function () {
@@ -40,8 +54,8 @@ const cheatCodeGate = function() {
         el.style.width = '40px';
         el.style.verticalAlign = 'middle';
         el.style.fontWeight = 'bold';
-        el.style.backgroundColor = 'red';
-        el.style.color = 'white';
+        el.style.backgroundColor = btnBackground;
+        el.style.color = btnText;
         el.style.borderRadius = '50%';
         el.id = id;
         el.onclick = function () {
@@ -59,7 +73,7 @@ const cheatCodeGate = function() {
     
     // create background element to cover screen
     let bg = document.createElement('div');
-        bg.style.backgroundColor = '#1c1c1c';
+        bg.style.backgroundColor = gateBackground;
         bg.style.height = '100%';
         bg.style.width = '100%';
         bg.style.position = 'absolute';
@@ -74,10 +88,8 @@ const cheatCodeGate = function() {
     
     // create the table element to hold and space the UI elements
     let table = document.createElement('table');
-        table.style.color = '#f8f8f8';
         table.style.width = '50%';
         table.style.margin = '0 auto';
-        table.style.fontSize = '2rem';
     
     let tbody = document.createElement('tbody');
     
@@ -172,10 +184,3 @@ const cheatCodeGate = function() {
     bg.appendChild(tableWrap);
     body.appendChild(bg);
 };
-
-// on document ready
-if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
-    cheatCodeGate();
-} else {
-    document.addEventListener("DOMContentLoaded", cheatCodeGate);
-}

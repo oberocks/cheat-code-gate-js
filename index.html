@@ -40,6 +40,22 @@
         <!-- JS -->
         <script src="cheat-code-gate.js"></script>
 
+        <script type="text/javascript">
+
+            let options = {
+                gateBackground: '#cccccc'
+            };
+            
+            // on document ready
+            if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
+                //cheatCodeGate();
+                cheatCodeGate(options);
+            } else {
+                document.addEventListener("DOMContentLoaded", cheatCodeGate(options));
+            }
+
+        </script>
+
     </body>
 
 </html>
