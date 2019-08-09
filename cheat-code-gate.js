@@ -1,12 +1,5 @@
 const cheatCodeGate = function(obj) {
                 
-    /* {
-        gateBackground: '#1c1c1c',
-        dPadBackground: '#242424',
-        dPadText: '#999999',
-        btnBackground: 'red',
-        btnText: 'white'
-    } */
     // set options
     const gateBackground = obj.gateBackground ? obj.gateBackground : '#1c1c1c';
     const dPadBackground = obj.dPadBackground ? obj.dPadBackground : '#242424';
@@ -183,4 +176,5 @@ const cheatCodeGate = function(obj) {
     tableWrap.appendChild(table);
     bg.appendChild(tableWrap);
     body.appendChild(bg);
+    
 };
