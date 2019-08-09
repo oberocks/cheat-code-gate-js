@@ -1,18 +1,18 @@
 # cheat-code-gate.js
 
-A tiny and super easy JavaScript component plugin that automatically gates page content in a way that can only be unlocked by entering the Konami cheat code using the dynamically created UI buttons that take over the screen.
+A tiny JavaScript component plugin that automatically gates page content in a way that can only be unlocked by entering the Konami cheat code using the dynamically created UI buttons that take over the screen.
 
-> If you aren't sure what this whole project is about, you should probably read a bit about the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code) before using it!
+> If you aren't sure what this (playful) project is all about, you should probably read a bit about the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code) before using it!
 
 ## Default Installation
 
-Installing cheat-code-gate.js is easy. Simply download the .zip from GitHub, add the `cheat-code-gate.min.js` or `cheat-code-gate.js` file to your project wherever you need it. Then you'll need to include the script in your page code with something like this:
+Installing `cheat-code-gate.js` is easy. Simply download the .zip from GitHub (or a package manager), add the `cheat-code-gate.min.js` or `cheat-code-gate.js` file to your project wherever you need it. Then you'll need to include the script in your page code with something like this:
 
 ```html
 <script src="js/cheat-code-gate.min.js"></script>
 ```
 
-Next, you'll want to set up the code to call the cheat-code-gate.js script upon a page load like this:
+Next, you'll want to set up the code to call the `cheat-code-gate.js` function (`cheatCodeGate`) upon a page load like this:
 
 ```javascript
 // on document ready
@@ -31,7 +31,7 @@ You can alternatevly customize the colors of the dynamically created elements to
 <script src="js/cheat-code-gate.min.js"></script>
 ```
 
-Next, you'll want to set up the code to call the cheat-code-gate.js script with your custom colors. The following example uses a different background color for the page gate's background:
+Next, you'll want to set up the code to call the `cheat-code-gate.js` script with your custom colors JavaScript object. The following example uses a different background color for the gate element:
 
 ```javascript
 let options = {
@@ -40,7 +40,6 @@ let options = {
 
 // on document ready
 if ( document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll) ) {
-    //cheatCodeGate();
     cheatCodeGate(options);
 } else {
     document.addEventListener("DOMContentLoaded", cheatCodeGate(options));
@@ -48,7 +47,7 @@ if ( document.readyState === "complete" || (document.readyState !== "loading" &&
 ```
 
 ## Customization Options
-The following table has all of the customization options for the cheat-code-gate.js plugin:
+The following table has all of the customization options for the `cheat-code-gate.js` plugin:
 
 OPTION | VALUE TYPE
 ------------ | -------------
