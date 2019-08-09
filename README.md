@@ -53,12 +53,12 @@ if ( document.readyState === "complete" || (document.readyState !== "loading" &&
 ## Customization Options
 The following table has all of the JavaScript object customization properties for the `cheat-code-gate.js` plugin:
 
-OPTION | VALUE TYPE | DETAILS
+OPTION | VALUE TYPE | DEFAULT VALUE | DETAILS
 ------------ | ------------- | -------------
-gateBackground | String | This property sets the background color of the gate (the element that visually covers the page).
-dPadBackground | String | This property sets the background color of the dynamically generated D-Pad buttons.
-dPadText | String | This property sets the color of the dynamically generated D-Pad button text.
-btnBackground | String | This property sets the background color of the dynamically generated A & B buttons.
-btnText | String | This property sets the color of the dynamically generated A & B buttons text.
+gateBackground | String | `'#1c1c1c'` | This property sets the background color of the gate (the element that visually covers the page).
+dPadBackground | String | `'#242424'` | This property sets the background color of the dynamically generated D-Pad buttons.
+dPadText | String | `'#999999'` | This property sets the color of the dynamically generated D-Pad button text.
+btnBackground | String | `'red'` | This property sets the background color of the dynamically generated A & B buttons.
+btnText | String | `'white'` | This property sets the color of the dynamically generated A & B buttons text.
 
 > **NOTE**: You can pass any valid CSS color string as a value in your customization object! (IE: Hex, RGB, RGBa, etc. values)
