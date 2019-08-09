@@ -4,6 +4,10 @@ A tiny JavaScript component plugin that automatically gates page content in a wa
 
 > If you aren't sure what this (playful) project is all about, you should probably read a bit about the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code) before using it!
 
+## Table of Contents
+ * [Default Installation](#default-installation)
+ * [Customized Installation](#customized-installation)
+ * [Customization Options](#Cc
 ## Default Installation
 
 Installing `cheat-code-gate.js` is easy. Simply download the .zip from GitHub (or a package manager), add the `cheat-code-gate.min.js` or `cheat-code-gate.js` file to your project wherever you need it. Then you'll need to include the script in your page code with something like this:
@@ -47,14 +51,14 @@ if ( document.readyState === "complete" || (document.readyState !== "loading" &&
 ```
 
 ## Customization Options
-The following table has all of the customization options for the `cheat-code-gate.js` plugin:
+The following table has all of the JavaScript object customization properties for the `cheat-code-gate.js` plugin:
 
-OPTION | VALUE TYPE
------------- | -------------
-gateBackground | String
-dPadBackground | String
-dPadText | String
-btnBackground | String
-btnText | String
+OPTION | VALUE TYPE | DETAILS
+------------ | ------------- | -------------
+gateBackground | String | This property sets the background color of the gate (the element that visually covers the page).
+dPadBackground | String | This property sets the background color of the dynamically generated D-Pad buttons.
+dPadText | String | This property sets the color of the dynamically generated D-Pad button text.
+btnBackground | String | This property sets the background color of the dynamically generated A & B buttons.
+btnText | String | This property sets the color of the dynamically generated A & B buttons text.
 
 > **NOTE**: You can pass any valid CSS color string as a value in your customization object! (IE: Hex, RGB, RGBa, etc. values)
