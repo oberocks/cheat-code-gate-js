@@ -1,5 +1,5 @@
 # cheat-code-gate.js
-A tiny and super easy JavaScript component plugin that automatically gates page content in a way that can only be unlocked by entering the Konami cheat code.
+A tiny and super easy JavaScript component plugin that automatically gates page content in a way that can only be unlocked by entering the Konami cheat code using the dynamically created UI buttons that take over the screen.
 
 > If you aren't sure what this whole project is about, you should probably read a bit about the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code) before using it!
 
