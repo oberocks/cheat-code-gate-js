@@ -1,6 +1,6 @@
 const cheatCodeGate = function() {
                 
-    // init the array to keep track of the buttons clicked
+    // init the array to keep track of clicked buttons
     const btnSequence = [];
 
     // utility function to check for the right button sequence in the btnSequence array
