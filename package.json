@@ -1,0 +1,19 @@
+{
+  "name": "cheat-code-gate.js",
+  "version": "1.0.0",
+  "description": "A JavaScript plugin that automatically gates page content which can only be unlocked by using the Konami cheat code.",
+  "main": "cheat-code-gate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oberocks/cheat-code-gate-js.git"
+  },
+  "author": "Matt McT",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/oberocks/cheat-code-gate-js/issues"
+  },
+  "homepage": "https://github.com/oberocks/cheat-code-gate-js#readme"
+}
